@@ -3,19 +3,20 @@
 <html>
     <head>
         <title>Google</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
         <style>
         body{
             background-color: rgba(32,33,36,1);
             font-size: 14px;
+            color: white;
         }
 
-        #fullcontent{
+        #main-content{
             
             text-align: center;
             position: relative;
-            top:250px;
+            top:260px;
         }
         #SearchBar{
             width: 544px;
@@ -49,13 +50,75 @@
             margin: 0px  7px 0px 7px;
             padding: 0px  15px 0px 15px;
         }
+        .btns:hover{
+            border: 1px solid #a8abb6;
+            cursor: pointer;
+        }
+
+        nav{
+            text-align: right;
+            font-family: arial,sans-serif;
+        }
+
+        a{
+            color:white;
+            text-decoration: none;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+
+        .in-between1{
+            margin: 0px 8px 0px 10px;
+        }
+        .material-icons{
+            cursor: pointer;
+            border : 8px solid rgba(32,33,36,1);
+        }
+        .material-icons:hover{
+            border-radius: 50%;
+            border : 8px solid #303134;
+            background-color: #303134;
+
+        }
+
+        #email-icon{
+            border : 5px solid rgba(32,33,36,1);
+            border-radius: 50%;
+            margin:10px 0px 0px 0px;
+            position: relative;
+            bottom: 8px;
+
+
+        }
+
+        #email-icon:hover{
+            border : 5px solid #303134;
+
+        }
+        .links{
+            position: relative;
+            bottom: 15px;
+
+        }
+        .adjust{
+            position: relative;
+            bottom: 25px;
+        }
 
         </style>
     </head>
     <body>
 
+        
+        <nav>
+            <a class="adjust"href="https://mail.google.com/mail" alt="">Gmail</a>
+            <a class="in-between1 adjust" href="https://www.google.com.eg/imghp?hl=en&authuser=0&ogbl" alt="">Images</a>
+            <i class="material-icons links" style="font-size:25px; color:white">apps</i>
+            <a href="#"><img id="email-icon"src="https://lh3.googleusercontent.com/ogw/ADea4I7Fg5UEO2ODErzf3aujqjnXs78D69dyoZcSYY1j=s32-c-mo"> </a>
+        </nav>
 
-        <div id="fullcontent">
+        <div id="main-content">
             <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_light_color_272x92dp.png" alt="Google">
 
             <form>
@@ -70,6 +133,7 @@
             </form>
              
         </div>
-
     </body>
+
+   
 </html>
